@@ -23,6 +23,12 @@ model Secretaria {
   nome String 
   rg Int @unique
 }
+model Dentista {
+  id Int @id @default(autoincrement())
+  nomeDent String @unique
+  cro Int @unique
+  consultas Consulta[]
+}
 
 model Consulta {
   id Int @id @default(autoincrement())
@@ -30,6 +36,8 @@ model Consulta {
   realizada Boolean @default(false)
   paciente Paciente @relation(fields: [nomePcnt], references: [nome])
   nomePcnt String
+  dentista Dentista @relation(fields: [nomeDent], references: [nomeDent])
+  nomeDent String
 }
 
 // model Agenda {
