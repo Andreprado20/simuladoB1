@@ -2,12 +2,9 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-// async function main(){
-
-// }
-
 class PatientServices{
     constructor() {}
+    
     async listarPacientes(){
         try {
             const patientsList = await prisma.paciente.findMany();
@@ -87,11 +84,3 @@ class PatientServices{
 }
 
 export default new PatientServices();
-
-// main().then(async()=> {
-//     await prisma.$disconnect()
-// }).catch(async (e)=> {
-//     console.error(e)
-//     await prisma.$disconnect()
-//     process.exit(1)
-// })
