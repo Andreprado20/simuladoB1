@@ -63,6 +63,7 @@ class PatientServices{
                     }
                 }
             )
+            return `Paciente ${deletarPaciente.nome} deletado!`
         } catch (error){
             console.log(error)
         }
@@ -77,6 +78,7 @@ class PatientServices{
                    } 
                 }
             )
+            return buscarPaciente
         } catch (error){
             console.log(error)
         }
