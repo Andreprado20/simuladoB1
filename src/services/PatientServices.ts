@@ -27,7 +27,7 @@ class PatientServices{
                     },
                 }
             )
-            return `Paciente ${pacienteCreate.nome} cadastrado com sucesso!`
+            return pacienteCreate + `Paciente ${pacienteCreate.nome} cadastrado com sucesso!`
         } catch (error){
             console.log('Não foi possível cadastrar este paciente devido a um erro')
             console.log(error)
@@ -48,7 +48,7 @@ class PatientServices{
                     }
                 }
             )
-            return `Paciente ${atualizaPaciente.nome} alterado com sucesso!`
+            return atualizaPaciente + `Paciente ${atualizaPaciente.nome} alterado com sucesso!`
         } catch (error){
             console.log(error)
         }
@@ -63,7 +63,7 @@ class PatientServices{
                     }
                 }
             )
-            return `Paciente ${deletarPaciente.nome} deletado!`
+            return deletarPaciente + `Paciente ${deletarPaciente.nome} deletado!`
         } catch (error){
             console.log(error)
         }
