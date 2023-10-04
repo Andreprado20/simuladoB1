@@ -5,7 +5,7 @@ const prisma = new PrismaClient()
 class AgendaServices{
     constructor(){}
 
-    async listar(){
+    async listarAgenda(){
         try{
 
         } catch(error){
@@ -13,7 +13,7 @@ class AgendaServices{
         }
     }
 
-    async criar(){
+    async criarAgenda(){
         try{
 
         } catch(error){
@@ -21,7 +21,7 @@ class AgendaServices{
         }
     }
 
-    async update(){
+    async updateAgenda(){
         try{
 
         } catch(error){
@@ -29,7 +29,7 @@ class AgendaServices{
         }
     }
 
-    async delete(){
+    async deleteAgenda(){
         try{
 
         } catch(error){
